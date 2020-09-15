@@ -12,13 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let rect = canvas.getBoundingClientRect();
         let x =0, y=0, dibujando=false, color='black', grosor=1, prenderLapiz=false, prenderGoma=false;
 
-        function defcolor(c){
-                color=c;
-        }
-        function defgrosor(g){
-                grosor=g;
-        } 
-
         document.querySelector("#btnNuevo").addEventListener('click',function(){
             let r = confirm("Se borrar todo lo que hizo, ¿Desea continuar?");
             if (r == true) {
@@ -76,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function dibujar(x,y,x1,y1){
             if(prenderGoma==true){
-                ctx.strokeStyle= ctx.fillStyle;
+                ctx.strokeStyle= "#FFFFFF";
                 ctx.lineWidth=10*document.querySelector("#grosor").value;
             }
             else
@@ -90,15 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
             ctx.stroke();
             ctx.closePath();
         }
-
-        document.querySelector("#btnColor").addEventListener('click',function(){
-            console.log("entre")
-            for (let i = 0; i < imageData.width; i++) {
-                for (let j = 0; j < imageData.height; j++) {
-                    ctx.fillStyle = ctx.fillStyle=document.querySelector("#colorCanvas").value;
-                    ctx.fillRect(0,0,anchoImagen,alturaImagen);
-                }}
-        })
 
 
         //FUNCION PARA CARGAR UNA IMAGEN

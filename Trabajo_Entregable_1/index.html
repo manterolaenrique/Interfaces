@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagenes/iconos/web.png">
+    <title>Trabajo entregable N°1 Intefaces!</title>
+  </head>
+  <body>
+    <h1 class="centrar">Trabajo entregable N°1</h1>
+    <div class="container centrar bloque">
+        <div class="row bloque">
+            <div class="col">
+                <button type="button" id="btnLapiz" class="btn btn-primary"><img src="imagenes/iconos/lapiz.png" alt="x" />Lapiz</button>
+                <input type="color" id="color">
+                <input type="range" id="grosor" min="1" max="5" value="1">
+                <button type="button" id="btnGoma" class="btn btn-primary"><img src="imagenes/iconos/goma.png" alt="x" />Goma</button>
+                <button type="button" id="btnNuevo" class="btn btn-primary"><img src="imagenes/iconos/nuevo.png" alt="x" />Nuevo</button>
+                <button type="button" id="btnColor" class="btn btn-primary"><img src="imagenes/iconos/colrocanvas.png" alt="x" />fondo canvas</button>
+                <input type="color" id="colorCanvas">
+            </div>
+        </div>
+        <div class="row bloque">
+            <div class="col">
+                <button id="btnCargar" class="btn btn-primary"><img src="imagenes/iconos/foto.png" alt="x" />Imagen</button>
+                <input type="file" id="inputId" style="display: none;">
+                <a id="descarga" download><button class="btn btn-primary" id="btnGuardar"><img src="imagenes/iconos/salvar.png" alt="x" />Guardar</button></a>
+                <button type="button" id="btnQuitar" class="btn btn-primary"><img src="imagenes/iconos/eliminar.png" alt="x" />Quitar Filtro</button>
+            </div>
+        </div>
+        <div class="row bloque">
+            <div class="col"><label for="inputState">Filtro brillo</label>
+                <select class="form-control" id="selectValor">
+                    <option value="0">0</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                  </select>
+            </div>
+            <div class="col">
+                <button type="button" id="btnBrillo" class="btn btn-primary"><img src="imagenes/iconos/brillo.png" alt="x" />Brillo</button>
+                <button type="button" id="btnByN" class="btn btn-primary"><img src="imagenes/iconos/blancoynegro.png" alt="x" />Blanco y negro</button>
+                <button type="button" id="btnSepia" class="btn btn-primary"><img src="imagenes/iconos/reloj.png" alt="x" />Sepia</button>
+                <button type="button" id="btnNegativo" class="btn btn-primary"><img src="imagenes/iconos/negativo.png" alt="x" />Negativo</button>
+                <button type="button" id="btnDifuminar" class="btn btn-primary"><img src="imagenes/iconos/difuminar.png" alt="x" />difuminar</button>
+                <button type="button" id="btnSaturacion" class="btn btn-primary"><img src="imagenes/iconos/saturacion.png" alt="x" />Saturacion</button>
+            </div>
+        </div>
+    </div> 
+    <div class="centrar">
+        <canvas id="canvas" class="bloque" width="800" height="600">
+    </div>
+    <div class="centrar">
+        <a href="alumno.html"><button class="btn btn-primary"><img src="imagenes/iconos/alumno.png" alt="x" />Alumno</button></a>
+        <a href="trabajo.html"><button class="btn btn-primary"><img src="imagenes/iconos/trabajo.png" alt="x" />Trabajo</button></a>
+    </div>
+    <script src="js/canvas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
